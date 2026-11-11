@@ -255,7 +255,7 @@ html:not(.js) .mix { display: none; }
   .anju__pic img { aspect-ratio: 4 / 3; }
 }
 
-/* ── 술꾼의 증상: 한 판에 한 줄 ── */
+/* ── 모토와 거짓말: 한 판에 한 줄 ── */
 .field { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); grid-template-rows: auto 1fr; column-gap: 8px; row-gap: 2.5rem; min-height: clamp(440px, 70svh, 740px); padding-block: 28px; }
 .field--soju { background: var(--soju); }
 .field--pocha { background: var(--pocha); }
@@ -368,7 +368,7 @@ html:not(.js) .mix { display: none; }
       <li><a class="link" href="#rounds">하룻밤</a></li>
       <li><a class="link" href="#somaek">소맥</a></li>
       <li><a class="link" href="#anju">안주</a></li>
-      <li><a class="link" href="#creed">증상</a></li>
+      <li><a class="link" href="#creed">모토</a></li>
       <li><a class="link" href="#faq">묻는 말</a></li>
     </ul>
   </nav>
@@ -385,8 +385,8 @@ html:not(.js) .mix { display: none; }
 
 <div class="tape marquee" aria-hidden="true">
   <div class="tape__run">
-    <span>딱 한 잔만</span><i></i><span>막차는 떠났다</span><i></i><span>기억이 없다</span><i></i><span>다신 안 마신다</span><i></i><span>빼기 없기</span><i></i><span>마셔라 마셔라</span><i></i><span>밤 열 시 신촌에서</span><i></i>
-    <span>딱 한 잔만</span><i></i><span>막차는 떠났다</span><i></i><span>기억이 없다</span><i></i><span>다신 안 마신다</span><i></i><span>빼기 없기</span><i></i><span>마셔라 마셔라</span><i></i><span>밤 열 시 신촌에서</span><i></i>
+    <span>딱 한 잔만</span><i></i><span>세 잔만 참아라</span><i></i><span>기억은 술로 찾는다</span><i></i><span>다신 안 마신다</span><i></i><span>빼기 없기</span><i></i><span>마셔라 마셔라</span><i></i><span>밤 열 시 신촌에서</span><i></i>
+    <span>딱 한 잔만</span><i></i><span>세 잔만 참아라</span><i></i><span>기억은 술로 찾는다</span><i></i><span>다신 안 마신다</span><i></i><span>빼기 없기</span><i></i><span>마셔라 마셔라</span><i></i><span>밤 열 시 신촌에서</span><i></i>
   </div>
 </div>
 
@@ -563,12 +563,12 @@ html:not(.js) .mix { display: none; }
     <h2 class="field__say" id="creed-h" data-reveal="lines"><span class="line"><span data-line style="--i:0">딱</span></span><span class="line"><span data-line style="--i:1">한 잔만</span></span></h2>
   </div>
   <div class="field field--pocha field--flip wrap">
-    <p class="field__note" data-reveal="rise">알고 있었다. 시계를 봤고, 봤는데도 한 병을 더 시켰다. 택시비가 술값보다 많이 나온다. 인생은 망쳐도 운전대는 안 잡는다.</p>
-    <h3 class="field__say" data-reveal="lines"><span class="line"><span data-line style="--i:0">막차는</span></span><span class="line"><span data-line style="--i:1">떠났다</span></span></h3>
+    <p class="field__note" data-reveal="rise">우리 모토다. 술이 아무리 안 들어가는 날에도 꾹 참고 세 잔만 넘겨 본다. 그러면 그다음부터는 잘 들어간다. 안 들어간 날은 아직 없었다.</p>
+    <h3 class="field__say" data-reveal="lines"><span class="line"><span data-line style="--i:0">세 잔만</span></span><span class="line"><span data-line style="--i:1">참아라</span></span></h3>
   </div>
   <div class="field field--paper wrap">
-    <p class="field__note" data-reveal="rise">눈을 뜨면 현관이다. 신발은 한 짝이고 카드 결제 문자는 세 통이다. 단체방은 당분간 열지 않는 게 좋다.</p>
-    <h3 class="field__say" data-reveal="lines"><span class="line"><span data-line style="--i:0">기억이</span></span><span class="line"><span data-line style="--i:1">없다</span></span></h3>
+    <p class="field__note" data-reveal="rise">두 번째 모토다. 필름이 끊겨도 한 잔씩 더 마시다 보면 기억이 돌아온다. 의학적 근거는 없다. 돌아온 기억이 진짜인지도 아무도 모른다.</p>
+    <h3 class="field__say" data-reveal="lines"><span class="line"><span data-line style="--i:0">기억은</span></span><span class="line"><span data-line style="--i:1">술로 찾는다</span></span></h3>
   </div>
   <div class="field field--beer field--flip wrap">
     <p class="field__note" data-reveal="rise">매번 진심이다. 변기를 붙잡고 한 맹세라 더 진심이다. 그리고 누가 한 잔 하자고 하면 제일 먼저 나온다.</p>
@@ -591,7 +591,7 @@ html:not(.js) .mix { display: none; }
     <div class="qa"><div class="qa__in wrap"><h3 data-reveal="rise">술이 약한데 가도 되나요</h3><p data-reveal="rise" style="--i:1">된다. 대신 빼기는 없다. “오늘은 간이 안 좋아서”는 여기서 안 통한다. 빼다 걸리면 그날 단체방 안주가 된다. 약한 사람이 제일 먼저 취해서 제일 재밌어지니 걱정할 것 없다.</p></div></div>
     <div class="qa"><div class="qa__in wrap"><h3 data-reveal="rise">혼자 가도 괜찮나요</h3><p data-reveal="rise" style="--i:1">괜찮다. 소주 두 병이면 처음 본 사람과도 형 동생이 된다. 다음 날 이름은 기억나지 않는다.</p></div></div>
     <div class="qa"><div class="qa__in wrap"><h3 data-reveal="rise">몇 살부터 올 수 있나요</h3><p data-reveal="rise" style="--i:1">만 19세부터다. 처음 오는 날에는 신분증을 가져온다.</p></div></div>
-    <div class="qa"><div class="qa__in wrap"><h3 data-reveal="rise">몇 시에 끝나나요</h3><p data-reveal="rise" style="--i:1">아무도 모른다. 끝난 시각을 기억하는 사람이 없기 때문이다.</p></div></div>
+    <div class="qa"><div class="qa__in wrap"><h3 data-reveal="rise">몇 시에 끝나나요</h3><p data-reveal="rise" style="--i:1">아무도 모른다. 끝난 시각을 기억하는 사람이 없기 때문이다. 집에는 택시로 간다. 인생은 망쳐도 운전대는 안 잡는다.</p></div></div>
   </div>
   <i class="dock dock--off dock--off-r" data-dock="off" style="top:94%"></i>
 </section>
@@ -624,7 +624,7 @@ html:not(.js) .mix { display: none; }
         <li><a class="link" href="#rounds">하룻밤의 순서</a></li>
         <li><a class="link" href="#somaek">소맥 황금비율</a></li>
         <li><a class="link" href="#anju">안주</a></li>
-        <li><a class="link" href="#creed">증상</a></li>
+        <li><a class="link" href="#creed">모토</a></li>
         <li><a class="link" href="#faq">자주 묻는 말</a></li>
       </ul>
     </nav>
