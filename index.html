@@ -820,7 +820,7 @@ html:not(.js) .mix { display: none; }
     const g = c.getContext('2d'), r = g.createRadialGradient(128, 128, 0, 128, 128, 128);
     r.addColorStop(0, 'rgba(60,255,150,.85)'); r.addColorStop(0.35, 'rgba(20,210,105,.28)'); r.addColorStop(1, 'rgba(0,0,0,0)');
     g.fillStyle = r; g.fillRect(0, 0, 256, 256);
-    const s = new T.Sprite(new T.SpriteMaterial({ map: new T.CanvasTexture(c), depthTest: false, ...lightOnly })); s.renderOrder = 0; return s;
+    const s = new T.Sprite(new T.SpriteMaterial({ map: new T.CanvasTexture(c), depthTest: false, depthWrite: false, transparent: true }) /* 빛 번짐은 보통 섞기로: 불투명도 0인 픽셀에 색만 더하는 방식은 일부 그래픽카드에서 버려진다 */); s.renderOrder = 0; return s;
   };
 
   let quality = Math.min(window.devicePixelRatio || 1, 2); // 느린 기기에서는 아래에서 낮춘다
